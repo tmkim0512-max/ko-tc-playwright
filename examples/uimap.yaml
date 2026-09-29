@@ -1,0 +1,33 @@
+# 사이트 → 화면 → 요소 이름 → Playwright locator 문자열(그대로 locator() 에 넘긴다).
+# 여러 개가 잡히는 셀렉터는 strict 위반(BLOCKED)이 된다. 하나를 고르려면 ">> nth=0" 을 쓴다.
+the-internet:
+  base_url: https://the-internet.herokuapp.com
+  screens:
+    로그인:
+      path: /login
+      elements:
+        아이디 칸: "#username"
+        비밀번호 칸: "#password"
+        로그인 버튼: "button[type=submit]"
+        옛 로그인 버튼: "#login-submit"   # 의도적 재현(05): 화면에 없는 옛 셀렉터
+        알림 메시지: "#flash"
+    보안 화면:
+      path: /secure
+      elements:
+        알림 메시지: "#flash"
+        로그아웃 버튼: "a[href='/logout']"
+    체크박스:
+      path: /checkboxes
+      elements:
+        첫 체크박스: "#checkboxes input >> nth=0"
+        둘째 체크박스: "#checkboxes input >> nth=1"
+    드롭다운:
+      path: /dropdown
+      elements:
+        옵션 목록: "#dropdown"
+    끌어다 놓기:
+      path: /drag_and_drop
+      elements:
+        A 칸: "#column-a"
+        B 칸: "#column-b"
+        첫 칸 머리글: "#column-a header"

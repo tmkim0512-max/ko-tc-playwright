@@ -1,0 +1,126 @@
+{
+  "tcs": [
+    {
+      "src": "examples/tc/01_login_ok.tc",
+      "title": "로그인 성공",
+      "tag": "읽기",
+      "grade": "FULL",
+      "steps": 6,
+      "converted": 6,
+      "tests": [
+        "test_올바른_계정이면_보안_화면으로_간다"
+      ],
+      "todo": [],
+      "module": "test_01_login_ok"
+    },
+    {
+      "src": "examples/tc/02_checkboxes.tc",
+      "title": "체크박스 토글",
+      "tag": "읽기",
+      "grade": "FULL",
+      "steps": 7,
+      "converted": 7,
+      "tests": [
+        "test_첫_번째_체크박스를_체크할_수_있다",
+        "test_두_번째_체크박스를_해제할_수_있다"
+      ],
+      "todo": [],
+      "module": "test_02_checkboxes"
+    },
+    {
+      "src": "examples/tc/03_dropdown.tc",
+      "title": "드롭다운 선택",
+      "tag": "읽기",
+      "grade": "FULL",
+      "steps": 3,
+      "converted": 3,
+      "tests": [
+        "test_옵션을_고르면_값이_바뀐다"
+      ],
+      "todo": [],
+      "module": "test_03_dropdown"
+    },
+    {
+      "src": "examples/tc/04_wrong_expectation.tc",
+      "title": "틀린 비밀번호 오류 문구 — FAIL 재현",
+      "tag": "읽기",
+      "grade": "FULL",
+      "steps": 5,
+      "converted": 5,
+      "tests": [
+        "test_비밀번호가_틀리면_아이디_오류_문구가_보인다"
+      ],
+      "todo": [],
+      "module": "test_04_wrong_expectation"
+    },
+    {
+      "src": "examples/tc/05_old_selector.tc",
+      "title": "옛 셀렉터로 로그인 — BLOCKED 재현",
+      "tag": "읽기",
+      "grade": "FULL",
+      "steps": 5,
+      "converted": 5,
+      "tests": [
+        "test_옛_버튼_이름으로_로그인하면_보안_화면으로_간다"
+      ],
+      "todo": [],
+      "module": "test_05_old_selector"
+    },
+    {
+      "src": "examples/tc/06_no_assert.tc",
+      "title": "확인 스텝 없는 블록 — INCONCLUSIVE 재현",
+      "tag": "읽기",
+      "grade": "FULL",
+      "steps": 2,
+      "converted": 2,
+      "tests": [
+        "test_옵션을_고른다"
+      ],
+      "todo": [],
+      "module": "test_06_no_assert"
+    },
+    {
+      "src": "examples/tc/07_drag_and_drop.tc",
+      "title": "끌어다 놓기 — PARTIAL 재현(규칙 없음)",
+      "tag": "읽기",
+      "grade": "PARTIAL",
+      "steps": 3,
+      "converted": 2,
+      "tests": [
+        "test_A_칸을_B_칸으로_옮기면_순서가_바뀐다"
+      ],
+      "todo": [
+        {
+          "line": 10,
+          "reason": "no_rule",
+          "raw": "[A 칸]을 [B 칸]으로 끌어다 놓는다."
+        }
+      ],
+      "module": "test_07_drag_and_drop"
+    },
+    {
+      "src": "examples/tc/08_unknown_element.tc",
+      "title": "UI맵에 없는 요소 — PARTIAL 재현(해석 실패)",
+      "tag": "읽기",
+      "grade": "PARTIAL",
+      "steps": 3,
+      "converted": 1,
+      "tests": [
+        "test_아이디_저장을_체크하면_체크_상태가_된다"
+      ],
+      "todo": [
+        {
+          "line": 10,
+          "reason": "unresolved: [아이디 저장] 요소가 현재 화면 <로그인> 에 없다",
+          "raw": "[아이디 저장]을 체크한다."
+        },
+        {
+          "line": 11,
+          "reason": "unresolved: [아이디 저장] 요소가 현재 화면 <로그인> 에 없다",
+          "raw": "[아이디 저장]이 체크되어 있는지 확인한다."
+        }
+      ],
+      "module": "test_08_unknown_element"
+    }
+  ]
+}
