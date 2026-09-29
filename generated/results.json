@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "started": "2026-09-29T16:33:29+09:00",
+    "platform": "macOS-26.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.7",
+    "commit": "6de4e28",
+    "browser": "chromium 153.0.8010.12"
+  },
+  "rows": [
+    {
+      "module": "test_01_login_ok",
+      "test": "test_올바른_계정이면_보안_화면으로_간다",
+      "verdict": "PASS",
+      "reason": null,
+      "phase": null,
+      "error_type": null,
+      "message": null,
+      "fail_step": null,
+      "fail_kind": null,
+      "asserts": 2,
+      "elapsed_s": 4.58
+    },
+    {
+      "module": "test_02_checkboxes",
+      "test": "test_첫_번째_체크박스를_체크할_수_있다",
+      "verdict": "BLOCKED",
+      "reason": null,
+      "phase": "prep",
+      "error_type": "TimeoutError",
+      "message": "Page.goto: Timeout 10000ms exceeded.",
+      "fail_step": 6,
+      "fail_kind": "open",
+      "asserts": 0,
+      "elapsed_s": 10.34
+    },
+    {
+      "module": "test_02_checkboxes",
+      "test": "test_두_번째_체크박스를_해제할_수_있다",
+      "verdict": "PASS",
+      "reason": null,
+      "phase": null,
+      "error_type": null,
+      "message": null,
+      "fail_step": null,
+      "fail_kind": null,
+      "asserts": 2,
+      "elapsed_s": 3.86
+    },
+    {
+      "module": "test_03_dropdown",
+      "test": "test_옵션을_고르면_값이_바뀐다",
+      "verdict": "PASS",
+      "reason": null,
+      "phase": null,
+      "error_type": null,
+      "message": null,
+      "fail_step": null,
+      "fail_kind": null,
+      "asserts": 1,
+      "elapsed_s": 2.42
+    },
+    {
+      "module": "test_04_wrong_expectation",
+      "test": "test_비밀번호가_틀리면_아이디_오류_문구가_보인다",
+      "verdict": "FAIL",
+      "reason": null,
+      "phase": "body",
+      "error_type": "AssertionError",
+      "message": "Locator expected to contain text 'Your username is invalid!'",
+      "fail_step": 14,
+      "fail_kind": "text_has",
+      "asserts": 1,
+      "elapsed_s": 10.46
+    },
+    {
+      "module": "test_05_old_selector",
+      "test": "test_옛_버튼_이름으로_로그인하면_보안_화면으로_간다",
+      "verdict": "BLOCKED",
+      "reason": null,
+      "phase": "body",
+      "error_type": "TimeoutError",
+      "message": "Locator.click: Timeout 10000ms exceeded.",
+      "fail_step": 13,
+      "fail_kind": "click",
+      "asserts": 0,
+      "elapsed_s": 18.65
+    },
+    {
+      "module": "test_06_no_assert",
+      "test": "test_옵션을_고른다",
+      "verdict": "INCONCLUSIVE",
+      "reason": "no_assert",
+      "phase": null,
+      "error_type": null,
+      "message": null,
+      "fail_step": null,
+      "fail_kind": null,
+      "asserts": 0,
+      "elapsed_s": 3.99
+    },
+    {
+      "module": "test_07_drag_and_drop",
+      "test": "test_A_칸을_B_칸으로_옮기면_순서가_바뀐다",
+      "verdict": "NOT_RUN",
+      "reason": "partial",
+      "phase": null,
+      "error_type": null,
+      "message": null,
+      "fail_step": null,
+      "fail_kind": null,
+      "asserts": 0,
+      "elapsed_s": 0.0
+    },
+    {
+      "module": "test_08_unknown_element",
+      "test": "test_아이디_저장을_체크하면_체크_상태가_된다",
+      "verdict": "NOT_RUN",
+      "reason": "partial",
+      "phase": null,
+      "error_type": null,
+      "message": null,
+      "fail_step": null,
+      "fail_kind": null,
+      "asserts": 0,
+      "elapsed_s": 0.0
+    }
+  ]
+}
