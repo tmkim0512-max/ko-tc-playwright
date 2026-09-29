@@ -167,7 +167,10 @@ CI 는 push·PR 마다 단위 테스트를 돌리고, `generated/` 가 변환기
 
 ## Related
 
-- pom-scout — 화면 모델·셀렉터 수집 [link]
+- [pom-scout](https://github.com/tmkim0512-max/pom-scout) — 웹 앱을 탐색해 화면 모델(Page Object JSON)과 유일성 검증된 셀렉터 수집
+- [evidence-gated-e2e-loop](https://github.com/tmkim0512-max/evidence-gated-e2e-loop) — AI가 쓴 Playwright 테스트를 파일 증거로만 채택하고 AI 없이 재실행
+- [false-green-guard](https://github.com/tmkim0512-max/false-green-guard) — 테스트를 무력화해 초록불을 만드는 diff를 탐지하고, 격리 사본에서 수정을 재판정
+- [parking-api-qa-lab](https://github.com/tmkim0512-max/parking-api-qa-lab) — 주차 API를 pytest·자체 Mock 서버·k6 합격 기준·GitHub Actions로 검증하는 QA 실습
 
 ## License
 
